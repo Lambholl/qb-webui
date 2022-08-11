@@ -10,3 +10,4 @@
 * 如果您在`Ubuntu`或者`Debian`下编译安装`qBittorrent`遇到了困难，推荐[NPCHK的教程](https://npchk.info/ubuntu-debian-install-qbittorrent/)，其他系统的教程应该也可以在他的博客中找到
 * `Windows`的`qBittorrent 4.1.9.1`安装包，可以在[这里](https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-4.1.9.1/)下载到
 * 如需下载此改版`Web UI`，请移步对应版本的`branch`（[4.1.9.1版本](https://github.com/Lambholl/qb-webui/tree/4.1.9.1)）
+* 如果您習慣於港繁或臺繁，請前往`Releases`下載[CJK地區化附加包](https://github.com/Lambholl/qb-webui/releases/tag/114514)解壓後覆蓋原來的內容
