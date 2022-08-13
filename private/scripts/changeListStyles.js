@@ -1,23 +1,21 @@
 // Auto change Japanese styles by Lambholl
 
 function isJapanese(text) {
-    var reg = new RegExp("[\\u3040-\\u30FF]+","g");
-    if (reg.test(text)) {
-        return true;
-    } else {
-        return false;
-    }
+    let reg = new RegExp("[\\u3040-\\u30FF]+","g");
+    return reg.test(text);
 }
 
 
 function changeStyles() {
-    for (var i = 0, len = document.getElementById('aaa114514').children.length; i < len; i++) {
-        if (!document.getElementById('aaa114514').children[i].children[2].checked) {
-            var isJpn = isJapanese(document.getElementById('aaa114514').children[i].children[2].innerHTML);
-            if (isJpn) {
-                document.getElementById('aaa114514').children[i].children[2].className = 'jpn-fonts';
+    let el = document.getElementById('aaa114514');
+    let i = 0, len = el.children.length;
+    
+    for (; i < len; i++) {
+        if (!el.children[i].children[2].checked) {
+            if (isJapanese(el.children[i].children[2].innerText)) {
+                el.children[i].children[2].className = 'jpn-fonts';
             }
-            document.getElementById('aaa114514').children[i].children[2].checked = true;
+            el.children[i].children[2].checked = true;
         }
     }
 }
