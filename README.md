@@ -16,7 +16,7 @@
   6. 可以通过`WebUI`更改高级设置
   7. 可能还有别的
 * 由于`Windows`和`Linux`表示路径的分隔符并不一样，因此给出了两个系统对应的版本（虽然用`Windows`就不需要`WebUI`了，直接远程桌面就行）
-* 给出了默认字体和更纱黑体的两个版本，其中默认字体版本通过修改`html`的`lang`属性来修改字体，绝大多数桌面浏览器都支持这个功能（[必应](https://www.bing.com/)、[萌娘百科](https://zh.moegirl.org.cn/)和[1919810论坛](https://1919810.com/)等网站的字体选择就是这么解决的）<br>而更纱黑体版本则对于不同地区化版本给出了对应的字体包和`CSS`样式表，通过修改`class`属性来更改字体<br>我们正在对更纱黑体的`WebFont`搭建`CDN`，以便在线调用，搭建完成后，可以将`60MiB`左右的文件减小至和默认字体版本一样大
+* 给出了默认字体和更纱黑体的两个版本，其中默认字体版本通过修改`html`的`lang`属性来修改字体，绝大多数桌面浏览器都支持这个功能（[必应](https://www.bing.com/)、[萌娘百科](https://zh.moegirl.org.cn/)和[1919810论坛](https://1919810.com/)等网站的字体选择就是这么解决的）<br>但是此方式也会有一定问题，例如，如果在标题中出现了简体字（如「xx字幕组」的「组」），就会被`fallback`到中文字体，很有可能两个字体的风格并不匹配<br>而更纱黑体版本则对于不同地区化版本给出了对应的字体包和`CSS`样式表，通过修改`class`属性来更改字体<br>我们正在对更纱黑体的`WebFont`搭建`CDN`，以便在线调用，搭建完成后，可以将`60MiB`左右的文件减小至和默认字体版本一样大
 * [qBittorrent](https://github.com/qbittorrent/qBittorrent) 的旧版本比较稳定，推荐`4.1.9.1`或者`4.2.5`版本
 * 如果您在`Ubuntu`或者`Debian`下编译安装`qBittorrent`遇到了困难，推荐[NPCHK的教程](https://npchk.info/ubuntu-debian-install-qbittorrent/)，其他系统的教程应该也可以在他的博客中找到
 * `Windows`的`qBittorrent 4.1.9.1`安装包，可以在[这里](https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-4.1.9.1/)下载到
